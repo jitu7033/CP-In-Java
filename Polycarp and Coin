@@ -1,0 +1,38 @@
+//import java.util.Locale;
+import java.util.Scanner;
+ 
+public class codeforces {
+ 
+    static void fair(long n){
+ 
+        long a,b;
+ 
+        if(n%3==1){
+            a = n/3;
+            a++;
+            b = n/3;
+        }
+        else if(n%3==2){
+            a = n/3;
+            b = n/3;
+            b++;
+        }
+        else{
+            a = n/3;
+            b = n/3;
+        }
+        System.out.println(a+" "+b);
+ 
+    }
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+        long t = sc.nextInt();
+        for(int i=0; i<t; i++) {
+            long n = sc.nextInt();
+            fair(n);
+        }
+ 
+ 
+ 
+    }
+}
